@@ -1,0 +1,40 @@
+header
+  .container
+    .row
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      margin-bottom: 0 !important
+  .header
+    &__link
+      img
+        margin: 0
+      &__contact
+        a
+          color: #fff
+          font:
+            family: $RS
+          margin: 1rem auto
+          display: block
+        button
+          width: 100%
+          font:
+            size: .6rem
+
+    &__navi
+      padding: 0 !important
+      ul
+        @extend %f-row
+        margin-left: 0
+        margin-right: 0
+        a
+          color: #fff
+          margin: .3rem .5rem
+          font:
+            family: $RS
+          box-sizing: border-box
+          border-bottom: 2px solid
+          transition: border-bottom 1s, -webkit-transform 1s
+          &:hover
+            border-bottom: 2px solid #616161

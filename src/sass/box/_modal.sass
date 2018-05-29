@@ -1,0 +1,45 @@
+.modal
+  &.full
+    width: 90%
+    max-height: 90%
+    font:
+      size: .9rem
+    .little
+      width: 80%
+      font:
+        size: .8rem
+    .modal-sl
+      //width: 100%
+      .item
+        img
+          width: auto
+          max-width: 100%
+    .div_info
+      .h3
+        font:
+          size: 1.3rem
+          family: $OS
+      ul
+        li
+          position: relative
+          padding-left: 25px
+          font:
+            size: .9rem
+            family: $OS
+          &::before
+            position: absolute
+            left: 0
+            content: ''
+            +bg(check)
+            width: 20px
+            height: 20px
+            display: block
+      p
+        font:
+          size: .8rem
+    .modal_button
+      width: 100%
+      button
+        width: 40%
+        margin: .5rem auto
+        display: block
